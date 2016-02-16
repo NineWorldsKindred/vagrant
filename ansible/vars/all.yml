@@ -21,7 +21,7 @@ pgsql:
 php:
     install: '1'
     ppa: php5-5.6
-    packages: [php5-cli, php5-intl, php5-mcrypt, php5-pgsql, php5-fpm]
+    packages: [php5-cli, php5-intl, php5-mcrypt, php5-pgsql, php5-fpm, php5-curl]
 xdebug:
     install: '1'
 composer:
