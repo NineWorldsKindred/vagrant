@@ -10,6 +10,8 @@ nginx:
     install: '1'
     docroot: /vagrant
     servername: nineworlds.vb
+    siteroot: /vagrant/site/public
+    sitename: site.nineworlds.vb
 pgsql:
     install: '1'
     database: db
@@ -19,7 +21,7 @@ pgsql:
 php:
     install: '1'
     ppa: php5-5.6
-    packages: [php5-cli, php5-intl, php5-mcrypt, php5-pgsql]
+    packages: [php5-cli, php5-intl, php5-mcrypt, php5-pgsql, php5-fpm]
 xdebug:
     install: '1'
 composer:
