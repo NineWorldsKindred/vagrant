@@ -3,6 +3,7 @@ server:
     install: '1'
     timezone: UTC
     locale: en_US.UTF-8
+    packages: [curl, wget, python-software-properties]
 vagrant_local:
     install: '1'
     vm: { base_box: trusty64, hostname: nineworlds, ip: 192.168.10.50, memory: '512', sharedfolder: ../, useVagrantCloud: '1', syncType: '0' }
@@ -26,4 +27,6 @@ xdebug:
     install: '1'
 composer:
     install: '1'
-
+node:
+    install: '1'
+    packages: [coffee-script, gulp]

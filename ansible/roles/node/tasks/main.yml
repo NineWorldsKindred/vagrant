@@ -1,0 +1,16 @@
+- name: Install Node
+  shell: curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+
+- name: Install Build Tools
+  become: yes
+  apt: pkg=build-essential state=latest
+
+- name: Install Node
+  become: yes
+  apt: pkg=nodejs state=latest
+
+- name: Install Global Node Packages
+  become: yes
+  npm: name={{ item }} global=yes state=latest
+  with_items: "{{ node.packages }}"
+  when: node.packages is defined

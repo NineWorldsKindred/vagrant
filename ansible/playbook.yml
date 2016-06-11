@@ -11,4 +11,5 @@
     - php
     - xdebug
     - composer
+    - node
     - app
