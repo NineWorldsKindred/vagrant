@@ -6,11 +6,11 @@
   apt: pkg=build-essential state=latest
 
 - name: Install Node
-  become: yes
+  sudo: yes
   apt: pkg=nodejs state=latest
 
 - name: Install Global Node Packages
-  become: yes
+  sudo: yes
   npm: name={{ item }} global=yes state=latest
   with_items: "{{ node.packages }}"
   when: node.packages is defined
