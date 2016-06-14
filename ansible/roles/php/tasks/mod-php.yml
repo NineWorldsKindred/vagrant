@@ -1,5 +1,10 @@
 ---
-- name: ensure timezone is set in apache2 php.ini
+- name: ensure timezone is set in php.ini
+  lineinfile: dest=/etc/php5/fpm/php.ini
+              regexp='date.timezone ='
+              line='date.timezone = {{ server.timezone }}'
+
+- name: ensure timezone is set in php.ini
   lineinfile: dest=/etc/php5/apache2/php.ini
               regexp='date.timezone ='
               line='date.timezone = {{ server.timezone }}'

@@ -1,7 +1,7 @@
 ---
 server:
     install: '1'
-    timezone: UTC
+    timezone: America/New_York
     locale: en_US.UTF-8
     packages: [curl, wget, python-software-properties]
 vagrant_local:
