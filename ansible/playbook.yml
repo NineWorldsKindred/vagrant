@@ -6,10 +6,10 @@
   roles:
     - server
     - vagrant_local
+    - node
     - nginx
     - pgsql
     - php
     - xdebug
     - composer
-    - node
     - app

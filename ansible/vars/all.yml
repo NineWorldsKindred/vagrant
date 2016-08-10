@@ -29,4 +29,4 @@ composer:
     install: '1'
 node:
     install: '1'
-    packages: [coffee-script, gulp]
+    packages: [gulp, coffee-script]
